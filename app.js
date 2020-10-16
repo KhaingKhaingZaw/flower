@@ -969,6 +969,11 @@ function webviewTest(sender_psid){
 
 
 
+const hiReply =(sender_psid) => {
+  let response = {"text": "You sent hi message"};
+  callSend(sender_psid, response);
+}
+
 const textReply =(sender_psid) => {
   let response = {"text": "You sent text message"};
   callSend(sender_psid, response);
