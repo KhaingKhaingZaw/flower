@@ -61,6 +61,7 @@ var firebaseConfig = {
     "project_id": process.env.FIREBASE_PROJECT_ID,    
     }),
     databaseURL: process.env.FIREBASE_DB_URL,    
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET
   };
 
 
@@ -588,8 +589,8 @@ const handleMessage = (sender_psid, received_message) => {
 
           switch(user_message) { 
 
-        case "text":
-          textReply(sender_psid);
+        case "hi":
+          hi(sender_psid);
           break;
         case "quick":
           quickReply(sender_psid);
